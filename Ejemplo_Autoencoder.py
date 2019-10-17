@@ -47,6 +47,7 @@ plt.imshow(curr_img, cmap='gray')
 plt.subplot(122)
 curr_img = np.reshape(test_data[0], (28,28))
 plt.imshow(curr_img, cmap='gray')
+plt.show()
 
 train_data = train_data.reshape(-1, 28,28, 1)
 test_data = test_data.reshape(-1, 28,28, 1)
@@ -118,6 +119,7 @@ predicted = autoencoder.predict(noisy)
 plt.subplot(122)
 curr_img = np.reshape(predicted, (28,28))
 plt.imshow(curr_img, cmap='gray')
+plt.show()
 
 
 
